@@ -10,26 +10,47 @@ package MODELO;
  * @author Sergio
  */
 public class Cursada1 {
-      private int id=-1;
+
+    private int id = -1;
+    private int idAlumno;
+    private int idMateria;
+
     private Alumno alumno;
     private Materia materia;
     private int nota;
-    
-    public Cursada1(Alumno alumno, Materia materia, int nota) {
-        this.alumno = alumno;
-        this.materia = materia;
+
+    public Cursada1(int idAlumno, int idMateria, int nota) {
+        this.idAlumno = idAlumno;
+        this.idMateria = idMateria;
         this.nota = nota;
     }
-        
-    public Cursada1(int id, Alumno alumno, Materia materia, int nota) {
+
+    public Cursada1(Alumno alumno, Materia materia, int nota) {
         this.id = id;
         this.alumno = alumno;
         this.materia = materia;
         this.nota = nota;
     }
 
-    public Cursada1(){}
-    
+    public int getIdAlumno() {
+        return idAlumno;
+    }
+
+    public void setIdAlumno(int idAlumno) {
+        this.idAlumno = idAlumno;
+    }
+
+    public int getIdMateria() {
+        return idMateria;
+    }
+
+    public void setIdMateria(int idMateria) {
+        this.idMateria = idMateria;
+    }
+
+    public Cursada1() {
+    }
+
     public int getId() {
         return id;
     }
@@ -61,7 +82,5 @@ public class Cursada1 {
     public void setNota(int nota) {
         this.nota = nota;
     }
-    
+
 }
-
-

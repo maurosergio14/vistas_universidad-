@@ -165,7 +165,7 @@ public class menuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenu6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu6ActionPerformed
-       
+
 
     }//GEN-LAST:event_jMenu6ActionPerformed
 
@@ -191,10 +191,10 @@ public class menuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-         // AQUI VA LA CLASE QUE MODIFICA LA NOTA
-           escritorio.removeAll();
+        // AQUI VA LA CLASE QUE MODIFICA LA NOTA
+        escritorio.removeAll();
         escritorio.repaint();
-        Notas av = new Notas();
+        CursadasV av = new CursadasV();
         av.setVisible(true);
         escritorio.add(av);
         escritorio.moveToFront(av);
@@ -206,9 +206,9 @@ public class menuPrincipal extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
-         escritorio.removeAll();
+        escritorio.removeAll();
         escritorio.repaint();
-        Materia av = new Materia();
+        MateriasV av = new MateriasV();
         av.setVisible(true);
         escritorio.add(av);
         escritorio.moveToFront(av);
@@ -216,8 +216,8 @@ public class menuPrincipal extends javax.swing.JFrame {
 
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
         // TODO add your handling code here:
-        
-        
+
+
     }//GEN-LAST:event_jMenu2ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
